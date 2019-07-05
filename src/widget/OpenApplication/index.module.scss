@@ -1,0 +1,23 @@
+/*蒙版*/
+.fxmark {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, .6);
+  z-index: 5;
+}
+
+.share_img {
+  position: fixed;
+  top: 0;
+  right: 0;
+
+  z-index: 10;
+}
+
+.share_img img {
+  width: 20.833333rem;
+  height: 11.083333rem;
+}

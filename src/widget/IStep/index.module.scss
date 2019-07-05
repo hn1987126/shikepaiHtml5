@@ -1,0 +1,46 @@
+.IStep {
+  width: 100%;
+  height: 6.416667rem;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 1rem;
+  font-family: 'PingFang-SC-Medium';
+  font-weight: 500;
+  color: #fff;
+}
+.stepChild{
+  height: 100%;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+.stepIcon{
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.stepDescription{
+  width: 100%;
+  text-align: center;
+  line-height: 30px;
+}
+.stepDotWrap{
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 25px;
+}
+.stepDot{
+  display: block;
+  width: 43px;
+  height: 3px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}

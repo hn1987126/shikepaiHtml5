@@ -1,0 +1,59 @@
+.IRecordCard{
+  width: 100%;
+  height: 6.25rem;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  padding: 1.666667rem 1rem 1.666667rem 0;
+  border-bottom: 1px solid #F0F2F5;
+  background: #fff;
+
+}
+.createDateWrap{
+  width: 7.333333rem;
+  border-right: 1px solid #DDDDDD;
+  display: flex;
+  flex-flow: column wrap;
+  align-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+.createDate{
+  font-size: 1.083333rem;
+  color: #333;
+  width: 100%;
+  text-align: center;
+}
+.createDateText{
+  font-size: 1rem;
+  color: #999;
+  width: 100%;
+  text-align: center;
+}
+.loanContent{
+  text-align: left;
+  font-size: 1.166667rem;
+  color: #333;
+  width: 16.6rem;
+  text-indent: 1rem;
+  box-sizing: border-box;
+}
+.loanResult{
+  width: 5rem;
+}
+.success{
+  font-size: 1.166667rem;
+  color: #526EFF;
+}
+.checking{
+  font-size: 1.166667rem;
+  color: #FF6E52;
+}
+.failture{
+  font-size: 1.166667rem;
+  color: #FF6E52;
+}
+.IconRight{
+  font-size: 1.5rem;
+  color: #666666
+}

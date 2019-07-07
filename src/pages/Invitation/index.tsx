@@ -9,6 +9,7 @@ import './index.less';
 interface LOADINFO {
   realName?: string;
   amoutMoney?: number;
+  amoutMoneyTitle?: string;
   loanPurpose?: string;
   loanTerm?: number;
   theProvice?: string;
@@ -92,7 +93,7 @@ let Invitation = () => {
           <span className="name">{loadInfo.realName}</span>/
           <span className="age">{loadInfo.age}岁</span>/
           <span className="county">{loadInfo.theCity}</span>/
-          <span className="loan">{loadInfo.amoutMoney}万</span>/
+          <span className="loan">{loadInfo.amoutMoneyTitle}</span>/
           <span className="term">{loadInfo.loanTerm}个月</span>
         </div>
       </div>

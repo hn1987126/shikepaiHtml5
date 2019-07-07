@@ -4,6 +4,7 @@ import { queryString } from '../../util/index';
 import style from './index.module.scss';
 interface IRecordCardProps {
   amoutMoney: number;
+  amoutMoneyTitle: string;
   loanPurpose: string;
   loanTerm: number;
   createDate: string;
@@ -25,7 +26,7 @@ let IRecordCard = (props: IRecordCardProps) => {
         <span className={style.createDateText}>申请日期</span>
       </div>
       <div className={style.loanContent}>
-        <span className={style.amoutMoney}>{props.amoutMoney}</span>万 /
+        <span className={style.amoutMoney}>{props.amoutMoneyTitle}</span> /
         <span className={style.loanTerm}>{props.loanTerm}</span>个月 /
         <span className={style.loanPurpose}>{props.loanPurpose}</span>
       </div>

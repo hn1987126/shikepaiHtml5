@@ -40,7 +40,7 @@ let LoanRecordDetail = () => {
           <div className="loadnCreateDate">申请时间：{loadInfo.createDatetime}</div>
           <div className="loadDetailWrap">
             <div className="loadDetail">
-              <div className="loadDetail_1">{loadInfo.amoutMoney}万元</div>
+              <div className="loadDetail_1">{loadInfo.amoutMoneyTitle}</div>
               <div className="loadDetail_2">贷款金额</div>
             </div>
             <div className="loadDetail">
@@ -103,7 +103,7 @@ let LoanRecordDetail = () => {
       <IList
         border={true}
         title="借款金额"
-        content={loadInfo.amoutMoney ? loadInfo.amoutMoney + '万元' : ''}
+        content={loadInfo.amoutMoney ? loadInfo.amoutMoneyTitle : ''}
       />
       <IList border={true} title="借款用途" content={loadInfo.loanPurpose} />
       <IList

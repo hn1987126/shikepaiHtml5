@@ -16,6 +16,7 @@ import './index.less';
 interface LOADINFO {
   realName?: string;
   amoutMoney?: number;
+  amoutMoneyTitle?: string;
   loanPurpose?: string;
   loanTerm?: number;
   theProvice?: string;
@@ -71,8 +72,8 @@ let InvitationDetail = () => {
             '/' +
             res.info.theCity +
             '/借' +
-            res.info.amoutMoney +
-            '万/期限' +
+            res.info.amoutMoneyTitle +
+            '/期限' +
             res.info.loanTerm +
             '个月';
         } else {
@@ -132,7 +133,7 @@ let InvitationDetail = () => {
                 <div className="time">申请时间：{loadInfo.createDatetime}</div>
                 <div className="aboutLoan">
                   <div className="coumn">
-                    <span className="bold">{loadInfo.amoutMoney}万元</span>
+                    <span className="bold">{loadInfo.amoutMoneyTitle}</span>
                     <span>贷款金额</span>
                   </div>
                   <div className="coumn">

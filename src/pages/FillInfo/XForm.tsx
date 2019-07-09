@@ -33,7 +33,8 @@ let _XForm = (props: XFormProps) => {
     runningWrter,
     manageTime,
     registration,
-    socialSecurity
+    hasSb
+    hasGjj
   } = JSON.parse(info);
 
   let [wokerType, setWorkerType] = useState(jobRole);
@@ -41,11 +42,11 @@ let _XForm = (props: XFormProps) => {
     setWorkerType(value);
   };
   // 1、无社保，无本地公积金 2、有社保，有本地公积金 、无社保，有本地公积金 4、有社保，无本地公积金
-  if (!socialSecurity) {
-    socialSecurity = '有社保，无本地公积金';
-  }
+  //if (!socialSecurity) {
+  //  socialSecurity = '有社保，无本地公积金';
+  //}
   let [shebaoValue, setShebaoValue] = useState(
-    socialSecurity.split('，')[0] === '有社保' ? 'activeBtn' : 'defaultBtn'
+    hasSb === '有' ? 'activeBtn' : 'defaultBtn'
   );
   let clickShebao = () => {
     if (shebaoValue === 'defaultBtn') {
@@ -55,7 +56,7 @@ let _XForm = (props: XFormProps) => {
     }
   };
   let [gongJiJinValue, setGongJiJinValue] = useState(
-    socialSecurity.split('，')[1] === '有本地公积金' ? 'activeBtn' : 'defaultBtn'
+    hasGjj === '有' ? 'activeBtn' : 'defaultBtn'
   );
   let clickGongJiJin = () => {
     if (gongJiJinValue === 'defaultBtn') {
@@ -84,9 +85,11 @@ let _XForm = (props: XFormProps) => {
           manageTime: values.manageTime || null,
           registration: values.registration || null
         };
-        let _shebao = shebaoValue === 'defaultBtn' ? '无社保' : '有社保';
-        let _gongjijin = gongJiJinValue === 'defaultBtn' ? '无本地公积金' : '有本地公积金';
-        params.socialSecurity = _shebao + '，' + _gongjijin;
+        let _shebao = shebaoValue === 'defaultBtn' ? '无' : '有';
+        let _gongjijin = gongJiJinValue === 'defaultBtn' ? '无' : '有';
+        //params.socialSecurity = _shebao + '，' + _gongjijin;
+        params.hasSb = _shebao;
+        params.hasGjj = _gongjijin;
         registerWorkData(params).then((res) => {
           if (res.code === 0) {
             let no = encodeURIComponent(res.no);

@@ -33,7 +33,7 @@ let _XForm = (props: XFormProps) => {
     runningWrter,
     manageTime,
     registration,
-    hasSb
+    hasSb,
     hasGjj
   } = JSON.parse(info);
 

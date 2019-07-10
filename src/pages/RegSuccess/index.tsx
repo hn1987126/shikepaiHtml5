@@ -10,6 +10,10 @@ let RegSuccess = () => {
   let phone = queryString().phone || null;
   let no = queryString().no || null;
   let safetyKey = queryString().safetyKey || null;
+  let info: any = decodeURIComponent(queryString().info || '{}');
+    let {
+        listSafetyKey
+    } = JSON.parse(info);
   useEffect(() => {
     document.title = '时客派-新户秒批';
     adList().then((res) => {
@@ -21,7 +25,7 @@ let RegSuccess = () => {
     });
   }, []);
   let goLoanRecordList = () => {
-    window.location.href = '/LoanRecordList?phone=' + phone + '&safetyKey=' + safetyKey;
+    window.location.href = '/LoanRecordList?phone=' + phone + '&safetyKey=' + listSafetyKey;
   };
   return (
     <div className="RegSuccess">
@@ -29,7 +33,7 @@ let RegSuccess = () => {
       <p className="RegSuccess-title">提交成功</p>
       <p className="RegSuccess-content">请耐心等待客户经理的来电</p>
       <a
-        href={'/LoanRecordDetail?phone=' + phone + '&safetyKey=' + safetyKey + '&no=' + no}
+        href={'/LoanRecordDetail?safetyKey=' + safetyKey + '&no=' + no}
         className="newLink"
       >
         查看申请详情

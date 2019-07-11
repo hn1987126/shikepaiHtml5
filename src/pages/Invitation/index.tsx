@@ -10,6 +10,7 @@ interface LOADINFO {
   realName?: string;
   amoutMoney?: number;
   amoutMoneyTitle?: string;
+  amoutMoneyTitleSimple?: string;
   loanPurpose?: string;
   loanTerm?: number;
   theProvice?: string;
@@ -59,7 +60,7 @@ let Invitation = () => {
             '/' +
             res.info.theCity +
             '/借' +
-            res.info.amoutMoney +
+            res.info.amoutMoneyTitleSimple +
             '万/期限' +
             res.info.loanTerm +
             '个月';

@@ -1,6 +1,6 @@
 import { Icon } from 'antd';
 import React, { useEffect, useState } from 'react';
-import DownloadBg from '../../assets/images/Download/Download.png';
+import DownloadBg from '../../assets/images/Download/bo_pc.png';
 import DownloadBgTop from '../../assets/images/Download/top_pc.png';
 import DownloadBtnBg from '../../assets/images/Download/DownloadBtn.png';
 import { isAndroid, isIos, isWeiXin, queryString } from '../../util/index';
@@ -50,8 +50,8 @@ let Download = () => {
   return (
     <>
       <div className="Download">
-        <div className="DownloadTop">
-          <img src="${DownloadBgTop}"/>
+        <div class="DownloadTop">
+          <img src={{ ${DownloadBgTop} }}/>
         </div>
         <div className="DownloadCenter">
 

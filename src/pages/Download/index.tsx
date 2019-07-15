@@ -51,7 +51,7 @@ let Download = () => {
     <>
       <div className="Download">
         <div class="DownloadTop">
-          <img src={{ DownloadBgTop }}/>
+          <img src={ DownloadBgTop }/>
         </div>
         <div className="DownloadCenter">
 

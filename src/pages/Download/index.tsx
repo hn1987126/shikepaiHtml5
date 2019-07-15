@@ -50,7 +50,7 @@ let Download = () => {
   return (
     <>
       <div className="Download">
-        <div class="DownloadTop">
+        <div className="DownloadTop" style={{ backgroundImage: `url(${DownloadBg})` }}>
           <img src={ DownloadBgTop }/>
         </div>
         <div className="DownloadCenter">

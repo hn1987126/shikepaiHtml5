@@ -49,6 +49,10 @@ let Download = () => {
   return (
     <>
       <div className="Download" style={{ backgroundImage: `url(${DownloadBg})` }}>
+        <div className="main_left">
+          test
+        </div>
+
         <div className="DownloadBtnWrap">
           <div
             className="DownloadBtn"

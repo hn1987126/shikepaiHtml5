@@ -1,6 +1,7 @@
 import { Icon } from 'antd';
 import React, { useEffect, useState } from 'react';
 import DownloadBg from '../../assets/images/Download/Download.png';
+import DownloadBgTop from '../../assets/images/Download/top_pc.png';
 import DownloadBtnBg from '../../assets/images/Download/DownloadBtn.png';
 import { isAndroid, isIos, isWeiXin, queryString } from '../../util/index';
 import OpenApplication from '../../widget/OpenApplication/';
@@ -48,9 +49,15 @@ let Download = () => {
   }, []);
   return (
     <>
-      <div className="Download" style={{ backgroundImage: `url(${DownloadBg})` }}>
-        <div className="main_left">
-          test
+      <div className="Download">
+        <div className="DownloadTop">
+          <img src={{${DownloadBgTop}}}/>
+        </div>
+        <div className="DownloadCenter">
+
+        </div>
+        <div className="DownloadBottom">
+
         </div>
 
         <div className="DownloadBtnWrap">

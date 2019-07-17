@@ -151,7 +151,6 @@ let _XForm = (props: XFormProps) => {
                 rules: [{ required: true, message: '请选择金额' }]
               })(
                 <Select placeholder="金额" suffixIcon={<Icon type="caret-down" />}>
-                  <Option value="1">5万以下</Option>
                   <Option value="2">5-10万</Option>
                   <Option value="3">10-20万</Option>
                   <Option value="4">20-50万</Option>

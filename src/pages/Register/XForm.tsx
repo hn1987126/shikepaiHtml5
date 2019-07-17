@@ -147,7 +147,7 @@ let _XForm = (props: XFormProps) => {
           <div className="flexWrap">
             <Form.Item label="借多少:" hasFeedback {...formTopItemLayout}>
               {getFieldDecorator('loan', {
-                initialValue: '1',
+                initialValue: '2',
                 rules: [{ required: true, message: '请选择金额' }]
               })(
                 <Select placeholder="金额" suffixIcon={<Icon type="caret-down" />}>

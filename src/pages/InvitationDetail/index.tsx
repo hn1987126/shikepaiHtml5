@@ -95,7 +95,7 @@ let InvitationDetail = () => {
       let timer = setTimeout(() => {
         if (isAndroid()) {
           setShowDownloadLoading(false);
-          window.location.href = 'http://www.shikepai.com/upload/brokerApp/skp_V3.1.0.apk';
+          window.location.href = 'http://www.shikepai.com/upload/brokerApp/skp_V3.1.1.apk';
         } else {
           setShowDownloadLoading(false);
           window.location.href =

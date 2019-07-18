@@ -93,7 +93,7 @@ let Invitation = () => {
         <div className="infomation">
           <span className="name">{loadInfo.realName}</span>/
           <span className="age">{loadInfo.age}岁</span>/
-          <span className="county">{loadInfo.theCity}</span>/
+          <span className="county" style="display:none;">{loadInfo.theCity}/</span>
           <span className="loan">{loadInfo.amoutMoneyTitleSimple}</span>/
           <span className="term">{loadInfo.loanTerm}个月</span>
         </div>

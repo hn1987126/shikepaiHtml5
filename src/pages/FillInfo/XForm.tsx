@@ -160,13 +160,13 @@ let _XForm = (props: XFormProps) => {
                 <Option value="上班族">上班族</Option>
                 <Option value="个体户">个体户</Option>
                 <Option value="企业主">企业主</Option>
-                <Option value="无固定职业">自由职业</Option>
+                <Option value="自由职业">自由职业</Option>
               </Select>
             )}
           </Form.Item>
         </div>
 
-        {(!wokerType || ['无固定职业', '上班族'].includes(wokerType)) && (
+        {(!wokerType || ['自由职业', '上班族'].includes(wokerType)) && (
           <div className="FillInfoIconWrap">
             <IconFont type="icon-shouru" className="FillInfoIcon IconFont" />
             <Form.Item hasFeedback {...formMiddleItemLayout}>

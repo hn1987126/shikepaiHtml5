@@ -18,7 +18,7 @@ const LoanRecordDetail = lazy(() => import('../pages/LoanRecordDetail/index'));
 export const Menus = [
   {
     path: '/index',
-    title: '时客派-新户秒批',
+    title: '时客派：银行资金、额度高、利率低、放款快',
     component: Register
   },
   {
@@ -38,17 +38,17 @@ export const Menus = [
   },
   {
     path: '/FillInfo',
-    title: '时客派-新户秒批',
+    title: '时客派：银行资金、额度高、利率低、放款快',
     component: FillInfo
   },
   {
     path: '/FillCredit',
-    title: '时客派-新户秒批',
+    title: '时客派：银行资金、额度高、利率低、放款快',
     component: FillCredit
   },
   {
     path: '/RegSuccess',
-    title: '时客派-新户秒批',
+    title: '时客派：银行资金、额度高、利率低、放款快',
     component: RegSuccess
   },
   {

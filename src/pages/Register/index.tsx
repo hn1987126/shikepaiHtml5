@@ -26,7 +26,7 @@ const step = [
 interface RegisterProps {}
 let Register = (props: RegisterProps) => {
   useEffect(() => {
-    document.title = '时客派-新户秒批';
+    document.title = '时客派：银行资金、额度高、利率低、放款快';
   }, []);
   return (
     <div className="Register">

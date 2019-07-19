@@ -15,7 +15,7 @@ let RegSuccess = () => {
         listSafetyKey
     } = JSON.parse(info);
   useEffect(() => {
-    document.title = '时客派-新户秒批';
+    document.title = '时客派：银行资金、额度高、利率低、放款快';
     adList().then((res) => {
       if (res.code === 0) {
         setDataSource(res.data);

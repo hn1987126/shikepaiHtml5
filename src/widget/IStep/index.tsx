@@ -18,12 +18,12 @@ let IStep = (props: IStepProps) => {
           <React.Fragment key={index}>
             <div className={style.stepChild}>
               <i className={style.stepIcon} style={{ backgroundImage: `url(${s.icon})` }} />
-              <p className={style.stepDescription} style={index<=props.current?{color:'#f5222d'}:{} }>{s.description}</p>
+              {/*<p className={style.stepDescription} style={index<=props.current?{color:'#f5222d'}:{} }>{s.description}</p>*/}
             </div>
             {index !== props.step.length - 1 ? (
-              <div className={style.stepDotWrap}>
-              <i className={style.stepDot} style={{ backgroundImage: `url(${dotBg})` }} />
-              </div>
+              {/*<div className={style.stepDotWrap}>*/}
+              {/*<i className={style.stepDot} style={{ backgroundImage: `url(${dotBg})` }} />*/}
+              {/*</div>*/}
             ) : (
               ''
             )}

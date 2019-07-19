@@ -23,10 +23,10 @@ const step = [
     icon: thridStep,
     description: '利率低'
   },
-    {
-        icon: fourStep,
-        description: '放款快'
-    }
+  {
+    icon: fourStep,
+    description: '放款快'
+  }
 ];
 interface RegisterProps {}
 let Register = (props: RegisterProps) => {

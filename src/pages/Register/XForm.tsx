@@ -150,7 +150,7 @@ let _XForm = (props: XFormProps) => {
                 initialValue: '2',
                 rules: [{ required: true, message: '请选择金额' }]
               })(
-                <Select placeholder="金额" suffixIcon={<Icon type="caret-down" />}>
+                <Select placeholder="请选择金额" suffixIcon={<Icon type="caret-down" />}>
                   <Option value="2">5-10万</Option>
                   <Option value="3">10-20万</Option>
                   <Option value="4">20-50万</Option>
@@ -164,7 +164,7 @@ let _XForm = (props: XFormProps) => {
             {getFieldDecorator('time', {
               rules: [{ required: true, message: '请选择借款期限' }]
             })(
-              <Select placeholder="借款期限" suffixIcon={<Icon type="caret-down" />}>
+              <Select placeholder="请选择借款期限" suffixIcon={<Icon type="caret-down" />}>
                 <Option value="3">3个月</Option>
                 <Option value="6">6个月</Option>
                 <Option value="12">12个月</Option>
@@ -178,7 +178,7 @@ let _XForm = (props: XFormProps) => {
             {getFieldDecorator('purpose', {
               rules: [{ required: true, message: '请选择借款用途' }]
             })(
-              <Select placeholder="借款用途" suffixIcon={<Icon type="caret-down" />}>
+              <Select placeholder="请选择借款用途" suffixIcon={<Icon type="caret-down" />}>
                 <Option value="医疗服务贷款">医疗服务贷款</Option>
                 <Option value="装修贷款">装修贷款</Option>
                 <Option value="消费贷款">消费贷款</Option>

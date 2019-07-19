@@ -3,23 +3,28 @@ import bannerBg from '../../assets/images/Register/banner.png';
 import firstStep from '../../assets/images/Register/firstStep.png';
 import secondStep from '../../assets/images/Register/secondStep.png';
 import thridStep from '../../assets/images/Register/thridStep.png';
+import fourStep from '../../assets/images/Register/fourStep.png';
 import tuding from '../../assets/images/Register/tuding.png';
 import IStep from '../../widget/IStep/';
 import './index.less';
 import XForm from './XForm';
 const step = [
-  {
-    icon: firstStep,
-    description: '填个表'
-  },
-  {
-    icon: secondStep,
-    description: '接个电话'
-  },
-  {
-    icon: thridStep,
-    description: '钱到账啦'
-  }
+    {
+        icon: firstStep,
+        description: '银行放款'
+    },
+    {
+        icon: secondStep,
+        description: '额度高'
+    },
+    {
+        icon: thridStep,
+        description: '利率低'
+    },
+    {
+        icon: fourStep,
+        description: '放款快'
+    }
 ];
 interface RegisterProps {}
 let FillCredit = (props: RegisterProps) => {

@@ -10,17 +10,18 @@ interface IRecordCardProps {
   createDate: string;
   bigId: string;
   buystateName: string;
+  phone2: string;
 }
 let IRecordCard = (props: IRecordCardProps) => {
-  let loanDetail = (bigId: string) => {
+  let loanDetail = (bigId: string, phone2: string) => {
     let phone = queryString().phone || null;
-    let safetyKey = queryString().safetyKey || null;
+    let safetyKey = phone2 || null;
     let no = bigId;
     window.location.href =
-      '/LoanRecordDetail?phone=' + phone + '&safetyKey=' + safetyKey + '&no=' + no;
+      '/LoanRecordDetail?safetyKey=' + safetyKey + '&no=' + no;
   };
   return (
-    <div className={style.IRecordCard} onClick={() => loanDetail(props.bigId)}>
+    <div className={style.IRecordCard} onClick={() => loanDetail(props.bigId, props.phone2)}>
       <div className={style.createDateWrap}>
         <span className={style.createDate}>{props.createDate}</span>
         <span className={style.createDateText}>申请日期</span>

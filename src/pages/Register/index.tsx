@@ -13,19 +13,19 @@ import XForm from './XForm';
 const step = [
   {
     icon: firstStep,
-    description: '填个表'
+    description: '银行放款'
   },
   {
     icon: secondStep,
-    description: '接个电话'
+    description: '额度高'
   },
   {
     icon: thridStep,
-    description: '钱到账啦'
+    description: '利率低'
   },
     {
         icon: fourStep,
-        description: '钱到账啦'
+        description: '放款快'
     }
 ];
 interface RegisterProps {}

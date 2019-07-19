@@ -3,6 +3,7 @@ import bannerBg from '../../assets/images/Register/banner.png';
 import firstStep from '../../assets/images/Register/firstStep.png';
 import secondStep from '../../assets/images/Register/secondStep.png';
 import thridStep from '../../assets/images/Register/thridStep.png';
+import fourStep from '../../assets/images/Register/fourStep.png';
 import tuding from '../../assets/images/Register/tuding.png';
 import FloatWindow from '../../widget/FloatWindow';
 import IStep from '../../widget/IStep/';
@@ -21,7 +22,11 @@ const step = [
   {
     icon: thridStep,
     description: '钱到账啦'
-  }
+  },
+    {
+        icon: fourStep,
+        description: '钱到账啦'
+    }
 ];
 interface RegisterProps {}
 let Register = (props: RegisterProps) => {

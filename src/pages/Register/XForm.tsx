@@ -145,7 +145,7 @@ let _XForm = (props: XFormProps) => {
             </Link>
           </span>
           <div className="flexWrap">
-            <Form.Item label="借多少:" hasFeedback {...formTopItemLayout}>
+            <Form.Item label="额度:" hasFeedback {...formTopItemLayout}>
               {getFieldDecorator('loan', {
                 initialValue: '2',
                 rules: [{ required: true, message: '请选择金额' }]
@@ -160,7 +160,7 @@ let _XForm = (props: XFormProps) => {
               )}
             </Form.Item>
           </div>
-          <Form.Item label="借多久:" hasFeedback {...formTopItemLayout}>
+          <Form.Item label="周期:" hasFeedback {...formTopItemLayout}>
             {getFieldDecorator('time', {
               rules: [{ required: true, message: '请选择借款期限' }]
             })(
@@ -174,9 +174,9 @@ let _XForm = (props: XFormProps) => {
               </Select>
             )}
           </Form.Item>
-          <Form.Item label="怎么用:" hasFeedback {...formTopItemLayout}>
+          <Form.Item label="用途:" hasFeedback {...formTopItemLayout}>
             {getFieldDecorator('purpose', {
-              rules: [{ required: true, message: '请选择借款目的' }]
+              rules: [{ required: true, message: '请选择借款用途' }]
             })(
               <Select placeholder="借款用途" suffixIcon={<Icon type="caret-down" />}>
                 <Option value="医疗服务贷款">医疗服务贷款</Option>

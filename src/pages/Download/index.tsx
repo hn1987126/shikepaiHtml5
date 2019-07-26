@@ -15,7 +15,7 @@ let Download = () => {
     let webview = decodeURIComponent(queryString().url);
     let timer = setTimeout(() => {
       if (isAndroid()) {
-        window.location.href = 'http://www.shikepai.com/upload/brokerApp/skp_V3.1.1.apk';
+        window.location.href = 'http://www.shikepai.com/upload/brokerApp/skp_V3.1.3.apk';
       }
     }, 2000);
     window.addEventListener('visibilitychange', (event: any) => {

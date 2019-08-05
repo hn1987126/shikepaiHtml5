@@ -98,9 +98,8 @@ let InvitationDetail = () => {
           window.location.href = 'http://www.shikepai.com/upload/brokerApp/skp_V3.1.4.apk';
         } else {
           setShowDownloadLoading(false);
-          window.location.href =
-            //'https://itunes.apple.com/cn/app/%E6%97%B6%E5%AE%A2%E6%B4%BE/id1394103492?mt=8';
-            'itms-services:///?action=download-manifest&url=https://download.shikepai.com/skp.plist';
+          window.location.href = 'itms-services:///?action=download-manifest&url=https://download.shikepai.com/skp.plist';
+          //window.location.href = 'https://itunes.apple.com/cn/app/%E6%97%B6%E5%AE%A2%E6%B4%BE/id1394103492?mt=8';
         }
       }, 2000);
       window.addEventListener('visibilitychange', (event: any) => {

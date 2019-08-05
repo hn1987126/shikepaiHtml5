@@ -9,7 +9,7 @@ let BrokerAward = () => {
   let fornewFlag = fornew * 1 === 1;
   let userInfo = decodeURIComponent(queryString().userInfo);
   useEffect(() => {
-    document.title = '时客派-注册领100金币福利';
+    document.title = '时客派-注册领20金币福利';
   }, []);
   let handleAction = () => {
     if (fornewFlag) {
@@ -28,7 +28,7 @@ let BrokerAward = () => {
       <div className="BrokerAwardContent">
         <div className="BrokerAwardTextWrap">
           <p className="BrokerAwardText1">
-            {fornewFlag ? '100金币已放至账户' + userInfo : '您已注册成为时客派用户'}
+            {fornewFlag ? '20金币已放至账户' + userInfo : '您已注册成为时客派用户'}
           </p>
           <p className="BrokerAwardText2">
             {fornewFlag ? '登录时客派App即可查看' : '30万信贷经理首选的一站式获客展业平台'}

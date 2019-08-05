@@ -27,8 +27,8 @@ let Download = () => {
     });
     if (isIos()) {
       window.location.href =
-        //'https://itunes.apple.com/cn/app/%E6%97%B6%E5%AE%A2%E6%B4%BE/id1394103492?mt=8';
-        'itms-services:///?action=download-manifest&url=https://download.shikepai.com/skp.plist';
+        'https://itunes.apple.com/cn/app/%E6%97%B6%E5%AE%A2%E6%B4%BE/id1394103492?mt=8';
+        //'itms-services:///?action=download-manifest&url=https://download.shikepai.com/skp.plist';
     } else {
       if (isWeiXin()) {
         setShowMark(true);

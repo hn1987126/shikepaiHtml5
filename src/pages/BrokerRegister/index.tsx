@@ -4,7 +4,7 @@ import './index.less';
 import XForm from './XForm';
 let BrokerRegister = () => {
   useEffect(() => {
-    document.title = '时客派-注册领20金币福利';
+    document.title = '时客派-服务最优的获客展业平台';
   }, []);
   return (
     <div className="BrokerRegister" style={{ backgroundImage: `url(${BrokerRegisterBg})` }}>

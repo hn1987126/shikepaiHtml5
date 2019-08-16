@@ -125,7 +125,7 @@ let InvitationDetail = () => {
   return (
     <>
       <div className="InvitationDetail">
-        <p className="title">时客派，信贷经纪人获客展业神器</p>
+        <p className="title">时客派，服务最优的获客展业平台</p>
         <div className="detail">
           <div className="detail_1">
             <div className="detail_2">

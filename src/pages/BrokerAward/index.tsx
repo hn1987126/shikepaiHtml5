@@ -9,7 +9,7 @@ let BrokerAward = () => {
   let fornewFlag = fornew * 1 === 1;
   let userInfo = decodeURIComponent(queryString().userInfo);
   useEffect(() => {
-    document.title = '时客派-服务最优的获客展业平台';
+    document.title = '时客派-服务最好的获客展业平台';
   }, []);
   let handleAction = () => {
     if (fornewFlag) {

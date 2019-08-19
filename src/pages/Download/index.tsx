@@ -46,7 +46,7 @@ let Download = () => {
 
   };
   useEffect(() => {
-    document.title = '时客派-服务最优的获客展业平台';
+    document.title = '时客派-服务最好的获客展业平台';
   }, []);
   return (
     <>

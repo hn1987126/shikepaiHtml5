@@ -92,7 +92,7 @@ let _XForm = (props: XFormProps) => {
         })(<Input className="Ipt" placeholder="公司名称" autoComplete="off" />)}
       </Form.Item>
       <Button type="primary" className="btnSubmit" htmlType="submit" onClick={handleSubmit}>
-        立即领金币
+        立即领福利
       </Button>
       <p className="register-text">
         注册即代表同意

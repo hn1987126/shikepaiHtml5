@@ -33,14 +33,16 @@ let Download = () => {
         //window.location.href = 'https://itunes.apple.com/cn/app/%E6%97%B6%E5%AE%A2%E6%B4%BE/id1394103492?mt=8';
         window.location.href = 'itms-services:///?action=download-manifest&url=https://download.shikepai.com/skp.plist';
       }
-
-      if (webview === 'profile') {
-        window.location.href = 'agent://city96003';
-      } else if (webview === 'openApplication') {
-        window.location.href = 'agent://city96003';
-      } else {
-        console.log('未知跳转页');
+      else{
+        if (webview === 'profile') {
+          window.location.href = 'agent://city96003';
+        } else if (webview === 'openApplication') {
+          window.location.href = 'agent://city96003';
+        } else {
+          console.log('未知跳转页');
+        }
       }
+
       setShowDownloadLoading(true);
     }
 

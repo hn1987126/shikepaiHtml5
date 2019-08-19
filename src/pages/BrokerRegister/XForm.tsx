@@ -46,7 +46,8 @@ let _XForm = (props: XFormProps) => {
         };
         brokerRegister(params).then((res) => {
           if (res.code === 0) {
-            window.location.href = '/BrokerAward?fornew=1&userInfo=' + encodeURIComponent(values.mobile);
+            //window.location.href = '/BrokerAward?fornew=1&userInfo=' + encodeURIComponent(values.mobile);
+            window.location.href = '/BrokerAward?fornew=2&userInfo=' + encodeURIComponent(values.mobile);
           } else if (res.code === 100) {
             window.location.href = '/BrokerAward?fornew=2&userInfo=' + encodeURIComponent(values.mobile);
           } else {

@@ -28,10 +28,10 @@ let BrokerAward = () => {
       <div className="BrokerAwardContent">
         <div className="BrokerAwardTextWrap">
           <p className="BrokerAwardText1">
-            {fornewFlag ? '20金币已放至账户' + userInfo : '您已注册成为时客派用户'}
+            {fornewFlag ? '20金币已放至账户' + userInfo : '欢迎使用时客派展业'}
           </p>
           <p className="BrokerAwardText2">
-            {fornewFlag ? '登录时客派App即可查看' : '30万信贷经理首选的一站式获客展业平台'}
+            {fornewFlag ? '登录时客派App即可查看' : '全国服务最好的获客展业平台'}
           </p>
         </div>
         <div className="BrokerAwardBtnWrap">
@@ -40,7 +40,7 @@ let BrokerAward = () => {
             style={{ backgroundImage: `url(${BrokerAwardBtnBg})` }}
             onClick={handleAction}
           >
-            {fornewFlag ? '立即查看' : '打开时客派抢单'}
+            {fornewFlag ? '立即查看' : '立即领福利'}
           </div>
         </div>
       </div>

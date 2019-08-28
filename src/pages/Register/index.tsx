@@ -13,7 +13,7 @@ import XForm from './XForm';
 const step = [
   {
     icon: firstStep,
-    description: '银行放款'
+    description: '银行资金'
   },
   {
     icon: secondStep,
